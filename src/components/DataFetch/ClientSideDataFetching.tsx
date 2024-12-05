@@ -7,6 +7,29 @@ import { formatPrice } from "@/utils/priceFormatting";
 interface ClientSideDataFetchingProps {
   tokenId: string;
 }
+export const DataRow = ({
+  label,
+  value,
+}: {
+  label: string;
+  value?: string | number;
+}) => {
+  const isPriceChange = label === "Price Change (24h)";
+  const isNegative = typeof value === "string" && value.includes("-");
+
+  return (
+    <div className="flex justify-between items-center fontSizeFromLg text-primary-colors">
+      <span className="font-normal">{label}</span>
+      <span
+        className={`font-semibold ${
+          isPriceChange ? (isNegative ? "text-red-500" : "text-green-500") : ""
+        }`}
+      >
+        {value || "N/A"}
+      </span>
+    </div>
+  );
+};
 
 export function ClientSideDataFetching({
   tokenId,
@@ -43,34 +66,6 @@ export function ClientSideDataFetching({
 
     fetchData();
   }, [tokenId]); // Dependency ensures re-fetching if tokenId changes
-
-  const DataRow = ({
-    label,
-    value,
-  }: {
-    label: string;
-    value?: string | number;
-  }) => {
-    const isPriceChange = label === "Price Change (24h)";
-    const isNegative = typeof value === "string" && value.includes("-");
-
-    return (
-      <div className="flex justify-between items-center fontSizeFromLg text-primary-colors">
-        <span className="font-normal">{label}</span>
-        <span
-          className={`font-semibold ${
-            isPriceChange
-              ? isNegative
-                ? "text-red-500"
-                : "text-green-500"
-              : ""
-          }`}
-        >
-          {value || "N/A"}
-        </span>
-      </div>
-    );
-  };
 
   return (
     <div className="w-full 2xl:p-4 p-3 bg-gray-100 dark:bg-gray-900 rounded-lg flex flex-col">

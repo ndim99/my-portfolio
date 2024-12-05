@@ -10,7 +10,7 @@ export default function Header() {
         <div className="flex items-center 2xl:gap-3 lg:gap-2.5 gap-2">
           <Image
             src={"/nikola.png"}
-            alt=""
+            alt="nikola"
             width={32}
             height={32}
             className="2xl:w-[36px] 2xl:h-[36px] lg:w-[32px] lg:h-[32px] w-[28px] h-[28px] rounded-full"
