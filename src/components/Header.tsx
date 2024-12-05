@@ -23,6 +23,9 @@ export default function Header() {
           </Link>
         </div>
         <div className="flex items-center 2xl:gap-3 lg:gap-2.5 gap-2 fontSizeFromLg font-semibold text-primary-colors">
+          <Link href={"/data-fetching"} className="link">
+            Data Fetch
+          </Link>
           <Link href={"/auth"} className="link">
             Authentication
           </Link>
