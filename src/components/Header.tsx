@@ -2,11 +2,13 @@ import React from "react";
 import Image from "next/image";
 import ThemeButton from "./ThemeButton";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+  const pathname = usePathname();
   return (
-    <header className="bg-gray-200 dark:bg-gray-800 text-black dark:text-white shadow-md 2xl:py-4 lg:py-3 py-2.5 2xl:px-5 lg:px-4 px-3 flex items-center justify-between border-b border-gray-300 dark:border-gray-600">
-      <div className="flex items-center 2xl:gap-5 lg:gap-4 gap-3">
+    <header className="bg-gray-200 dark:bg-gray-800 text-black dark:text-white shadow-md lg:py-3 py-2.5 2xl:px-5 lg:px-4 px-3 flex items-center justify-between border-b border-gray-300 dark:border-gray-600">
+      <div className="flex items-center 2xl:gap-8 lg:gap-6 gap-4">
         <div className="flex items-center 2xl:gap-3 lg:gap-2.5 gap-2">
           <Image
             src={"/nikola.png"}
@@ -17,16 +19,26 @@ export default function Header() {
           />
           <Link
             href={"/"}
-            className="fontSizeFrom3xl text-primary-colors font-semibold"
+            className="fontSizeFrom2xl text-secondary-colors font-semibold"
           >
             My Portfolio
           </Link>
         </div>
-        <div className="flex items-center 2xl:gap-3 lg:gap-2.5 gap-2 fontSizeFromLg font-semibold text-primary-colors">
-          <Link href={"/data-fetching"} className="link">
+        <div className="flex items-center 2xl:gap-5 lg:gap-4 gap-3">
+          <Link
+            href={"/data-fetching"}
+            className={`link ${
+              pathname === "/data-fetching" ? "text-primary-colors" : ""
+            }`}
+          >
             Data Fetch
           </Link>
-          <Link href={"/auth"} className="link">
+          <Link
+            href={"/auth"}
+            className={`link ${
+              pathname === "/auth" ? "text-primary-colors" : ""
+            }`}
+          >
             Authentication
           </Link>
         </div>
