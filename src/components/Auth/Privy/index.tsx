@@ -43,15 +43,14 @@ export default function PrivyBox() {
         <h2 className="fontSizeFromXl font-bold text-primary-colors">
           Login and Logout Functionality with Privy
         </h2>
-        <div className="flex flex-col 2xl:gap-4 gap-3">
-          <p className="fontSizeFromLg text-secondary-colors">
-            Below is an example demonstrating how Privy handles user
-            authentication. Upon logging in, additional user information, such
-            as their profile details or account status, becomes accessible
-            alongside the login and logout functionality.
-          </p>
+        <div className="flex flex-col mt-2 2xl:gap-4 gap-3">
           {/* PrivyBox component for authentication demonstration */}
           <LoginLogoutPrivy />
+          <p className="fontSizeFromLg text-secondary-colors">
+            Below is an example demonstrating how Privy handles user
+            authentication. Upon logging in, additional user information,
+            becomes accessible alongside the login and logout functionality.
+          </p>
           <CodeSnippet language="typescript" code={privySourceCode} />
         </div>
       </div>
