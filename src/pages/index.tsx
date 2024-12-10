@@ -29,6 +29,14 @@ export default function Home() {
           link={"/auth"}
           order
         />
+        <HomeBox
+          img={"/manage-global-state.png"}
+          title={"Managing Global State with useContext"}
+          description={
+            "This example demonstrates how to manage global state in a React application using the useContext hook. It showcases the use of a Context Provider to share state and functions, such as handling favorite tokens, across multiple components without the need for prop drilling. The state is stored and updated in a centralized location, ensuring efficient re-renders and clean, maintainable code."
+          }
+          link={"/manage-global-state"}
+        />
       </div>
     </Container>
   );

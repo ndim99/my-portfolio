@@ -41,6 +41,14 @@ export default function Header() {
           >
             Authentication
           </Link>
+          <Link
+            href={"/manage-global-state"}
+            className={`link ${
+              pathname === "/manage-global-state" ? "text-primary-colors" : ""
+            }`}
+          >
+            MGS with useContext
+          </Link>
         </div>
       </div>
       <div className="flex space-x-4">
