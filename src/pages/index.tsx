@@ -1,6 +1,4 @@
 import Container from "@/components/Container";
-import Link from "next/link";
-import Image from "next/image";
 import HomeBox from "@/components/HomePageBox";
 
 export default function Home() {

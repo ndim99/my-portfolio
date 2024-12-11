@@ -36,3 +36,7 @@
 .button {
   @apply outline-0 rounded-lg px-2.5 py-1.5 border border-gray-300 dark:border-gray-600 text-black dark:text-white bg-transparent hover:bg-gray-100 dark:hover:bg-gray-900 w-max;
 }
+
+.linkForMore {
+  @apply outline-0 rounded-md text-sm font-normal text-center px-2 py-1 border border-gray-300 dark:border-gray-600 text-black dark:text-white w-full;
+}

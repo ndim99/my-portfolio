@@ -3,6 +3,7 @@ import Image from "next/image";
 import ThemeButton from "./ThemeButton";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import NavMoreLink from "./NavMoreLink";
 
 export default function Header() {
   const pathname = usePathname();
@@ -24,7 +25,7 @@ export default function Header() {
             My Portfolio
           </Link>
         </div>
-        <div className="flex items-center 2xl:gap-5 lg:gap-4 gap-3">
+        <div className="md:flex hidden items-center 2xl:gap-5 lg:gap-4 gap-3">
           <Link
             href={"/data-fetching"}
             className={`link ${
@@ -51,8 +52,9 @@ export default function Header() {
           </Link>
         </div>
       </div>
-      <div className="flex space-x-4">
+      <div className="flex gap-2.5 items-center">
         <ThemeButton />
+        <NavMoreLink />
       </div>
     </header>
   );
