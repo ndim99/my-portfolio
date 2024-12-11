@@ -11,18 +11,23 @@ A personal portfolio built with **Next.js**, **Tailwind CSS**, and **TypeScript*
   - **Client-side**: Fetching data on the client with React hooks.  
   - **Server-side**: Fetching data on the server using Next.js's `getServerSideProps`.  
   - **React Query**: Fetching and caching data with **React Query**.  
+- 🌐 **Global State Management**: Managing global state using React's useContext hook to create a shared state that can be accessed across components.  
 
 ---
 
 ## 🖼️ **Screenshots**
 
 ### **Home Page (Coming Soon)**
+![Home Page](public/home.png)
 
 ### **Auth Page**  
 ![Auth Page](public/auth.png)
 
 ### **Data Fetching Page**  
 ![Data Fetching](public/data-fetching.png)
+
+### **Data Fetching Page**  
+![Manage Global State with useContext](public/manage-global-state.png)
 
 ---
 
