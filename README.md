@@ -26,7 +26,7 @@ A personal portfolio built with **Next.js**, **Tailwind CSS**, and **TypeScript*
 ### **Data Fetching Page**  
 ![Data Fetching](public/data-fetching.png)
 
-### **Data Fetching Page**  
+### **Manage Global State Page**  
 ![Manage Global State with useContext](public/manage-global-state.png)
 
 ---
