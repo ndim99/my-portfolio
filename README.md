@@ -2,6 +2,9 @@
 
 A personal portfolio built with **Next.js**, **Tailwind CSS**, and **TypeScript**. This application for now showcases different authentication methods (with Privy and Next.js) and data-fetching techniques (Client-side, Server-side, and React Query).
 
+## 🚀 **Live Demo**  
+Check out the live version of the app hosted on [Vercel](https://my-portfolio-seven-theta-61.vercel.app/).
+
 ---
 
 ## 🛠️ **Features**
@@ -85,17 +88,6 @@ To learn more about the tools and frameworks used in this project, check out:
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)  
 - [React Query Documentation](https://tanstack.com/query)  
 - [Privy Documentation](https://privy.io/docs)  
-
----
-
-## 📤 **Deploying on Vercel**
-
-To deploy this project on Vercel:  
-1. Push your repository to GitHub.  
-2. Link the repository to [Vercel](https://vercel.com/).  
-3. Configure the build settings (npm run build).  
-4. Deploy the project.
-
 
 ---
 
