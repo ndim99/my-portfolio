@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-400 2xl:py-6 lg:py-5 py-4 2xl:px-5 lg:px-4 px-3 border-t border-gray-300 dark:border-gray-600">
       <div className="container mx-auto text-center">
         <p className="text-lg font-semibold text-black dark:text-white mb-2">
-          Crypto Dashboard
+          My Portfolio
         </p>
         <p className="mb-4">
           Built by Nikola, a front-end engineer specializing in React, Next.js,
@@ -33,7 +33,7 @@ export default function Footer() {
             LinkedIn
           </a>
           <a href="mailto:nikola.dimovski666@gmail.com" className="link">
-            Contact
+            Gmail
           </a>
         </div>
         <p className="text-sm mt-4 text-gray-500">
